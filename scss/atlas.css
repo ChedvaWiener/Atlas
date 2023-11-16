@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arima', cursive;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(0, 0, 0);
+}
+
+
+@media (max-width:768px) {
+    main {
+        background-attachment: scroll;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0; 
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-position: center; 
+    z-index: -1;
+    overflow: hidden;
+    background-image: url(../images/pexels-aaditya-arora-592753.jpg);
+    background-size: cover; 
+    transition: background 2s ease; 
+}
+
+
+
