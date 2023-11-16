@@ -34,6 +34,7 @@ const getRandomCountry = () => {
   return allCountries[randomIndex];
 };
 
+// fills the drop down 
 const doApiAll = async () => {
   showLoading();
   let url = "https://restcountries.com/v3.1/all?fields=name";
