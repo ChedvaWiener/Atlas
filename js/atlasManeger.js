@@ -1,6 +1,6 @@
 import AtlasModule from "./atlasModule.js";
 
-
+// To set the background
 const images = [
     'url(../images/pexels-lara-jameson-8828583.jpg)',
     'url(../images/pexels-aaditya-arora-592753.jpg)',
@@ -17,7 +17,7 @@ export const changeBackground = () => {
     currentIndex = (currentIndex + 1) % images.length;
 };
 
-
+// Get full name by country code 
 export const fullCountry = async (codeCountry) => {
     let url = `https://restcountries.com/v3.1/alpha/${codeCountry}?fields=name`;
     let resp = await fetch(url);
@@ -41,7 +41,6 @@ export const createAtlas = async (ar, doApi) => {
     document.querySelector("#id_parent").innerHTML = "";
     let borderFullCountry = [];
 
-    // Check if ar[0].borders is defined and not empty
     if (ar[0].borders && ar[0].borders.length > 0) {
         await Promise.all(ar[0].borders.map(cuntry => fullCountry(cuntry)
             .then(fullName => borderFullCountry.push(fullName))
