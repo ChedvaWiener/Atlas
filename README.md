@@ -1,3 +1,3 @@
 # Atlas
 Atlas application 
- https://65560aa9172e4303e8ba76c0--incomparable-liger-4cd115.netlify.app/
+ https://655b05fab025a8533b73ea8e--jade-khapse-64ebe9.netlify.app/
